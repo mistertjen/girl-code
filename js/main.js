@@ -6,3 +6,11 @@ $(document).ready(function() {
 
   });
 });
+
+$('.scroll').click(function(event){
+	event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1250);
+    return false;
+});
