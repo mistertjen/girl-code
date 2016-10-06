@@ -18,8 +18,10 @@ $('.scroll').click(function(event){
 (function() {
 	if (document.getElementsByClassName('contact-meetup-members')[0]) {
 		var meetupData = new XMLHttpRequest ();
+		var url = "https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true";
 		meetupData.onreadystatechange = processMeetupData;
-		meetupData.open ("GET", "https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true", false);
+		meetupData.open ("GET", url , false);
+		meetupData.withCredentials = true;
 		meetupData.send();
 		meetupData;
 
