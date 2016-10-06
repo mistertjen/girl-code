@@ -94,7 +94,7 @@ footer {
 
 /*-------Team section -------*/
 
-.content-section-1 {
+.content-section-a {
 
 background: -moz-linear-gradient(45deg, hsla(0,2%,49%,1) 0%, hsla(0,26%,86%,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, hsla(0,2%,49%,1) 0%,hsla(0,26%,86%,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -137,5 +137,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f7979', end
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
-margin: 0px, 0px, 20px, 0px;
+margin-top: : 50px;
+margin-bottom: 50px;
+}
+
+.portrait {
+	border: 8px hsla(360, 100%, 100%, 1);
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
 }
