@@ -47,7 +47,7 @@ $(document).ready(function() {
 // INPUTS
 var urls = [];
 urls[0] = "https://api.meetup.com/girlcode?photo-host=public&sig_id=196092929&sig=ca1b24075a0729853813027c08cb66ade21c6443"
-urls[1] = 'https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true';
+urls[1] = 'https://api.meetup.com/ocamsterdam/events?photo-host=public&page=20&sig_id=196092929&sig=c974f71739a904b4f32f29a748e3e4635b3b885c';
 
 // REQUESTS
 for (var i = 0, requests = [], requestsJSON = []; i < urls.length; i++) {
