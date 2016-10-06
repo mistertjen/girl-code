@@ -1,0 +1,27 @@
+h4 {
+	margin:0px;
+	font-size:24px;
+}
+
+.event-sidebar {
+	float:left;
+	margin:0px;
+	padding-right: 15px;
+	font-size:20px;
+}
+
+.event-link {
+	float:left;
+	margin-bottom:20px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.event-container {
+	clear: both;
+}
+
+.calendar-container {
+	margin-left:10px;
+}
+
