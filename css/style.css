@@ -17,6 +17,7 @@ body {
     border: none;
     background-color: #f8f8f8;
     height: 50px;
+    padding: 10px 15px 10px 15px;
 }
 
 .dropdown-toggle a {
@@ -32,6 +33,11 @@ body {
 
 .caret {
 	color: #777;
+}
+
+.dropdown-menu li a {
+	color: #777;
+	font-weight: bold;
 }
 
 #contains-all {
