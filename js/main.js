@@ -30,6 +30,8 @@ $(function(){
     
     },3500);
 
+$('.contact-social-element').children().mouseenter(function() {
+	$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
 });
 
 // CONTACT-PAGE MEETUP API REQUEST
