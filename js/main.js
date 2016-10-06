@@ -45,7 +45,8 @@ $(document).ready(function() {
 // INPUTS
 var urls = [];
 urls[0] = "https://api.meetup.com/girlcode?photo-host=public&sig_id=196092929&sig=ca1b24075a0729853813027c08cb66ade21c6443"
-urls[1] = 'https://api.meetup.com/ocamsterdam/events?photo-host=public&page=20&sig_id=196092929&sig=c974f71739a904b4f32f29a748e3e4635b3b885c';
+urls[1] = 'https://api.meetup.com/ocamsterdam/events?photo-host=public&page=5&sig_id=196092929&sig=1f20a3049b0ce2de8d1341dffa1d6c32323f879e';
+// capped at 5 upcoming events, edit page=5 in url for to increase/decrease.
 
 // REQUESTS
 for (var i = 0, requests = [], requestsJSON = []; i < urls.length; i++) {
@@ -69,30 +70,50 @@ if (document.getElementsByClassName('contact-meetup-members')[0]) {
 }
 
 // if (document.getElementsByClassName('calendar-container')[0]) {
-	var x = 0;
-	// for (var x = 0; x < requestsJSON[1].length; x++ ) {
-		requestsJSON[1][x]['link'];
-		requestsJSON[1][x]['name'];
-		var dateString = String(new Date(requestsJSON[1][x]['time']));
-		var day = dateString.slice(0,3);
-		var time = dateString.slice(16,21);
-		var date = dateString.slice(8,10);
-		var month = dateString.slice(4,7);
-		requestsJSON[1][x]['venue']['name'];
-		requestsJSON[1][x]['yes_rsvp_count'];
+
+	// //JQUERY WAY, UNCOMPLETED.
+	// var eventContainer = $('.event-container');
+	// for (var x = 0, dateString = '', curEvent = ''; x < requestsJSON[1].length; x++ ) {
+	// 	dateString = String(new Date(requestsJSON[1][x]['time']));
+	// 	curEvent = $(eventContainer[x]).children('.event-link')[0];
+	// 	curEvent.href = requestsJSON[1][x]['link'];
+	// 	$(curEvent).children('.event-name')[0].innerHTML = requestsJSON[1][x]['name'];
+	// 	$(curEvent).children('.event-timeplace')[0].children[0].innerHTML = 'Monday' ;
+	// 	$(curEvent).children('.event-timeplace')[0].children[1].innerHTML = "09:00" ;
+	// 	$(curEvent).children('.event-timeplace')[0].children[2].innerHTML = "The House";
+	// 	$(curEvent).children('.event-going')[0].innerHTML = requestsJSON[1][x]['yes_rsvp_count'];
+	// 	$(curEvent).children('.event-date')[0].innerHTML ='';
+		
+		
+	// 	var day = dateString.slice(0,3);
+	// 	var time = dateString.slice(16,21);
+	// 	var date = dateString.slice(8,10);
+	// 	var month = dateString.slice(4,7);
+	// 	requestsJSON[1][x]['venue']['name'];
 	// }
 
+	for (var x = 0, dateString = '', 
+		eventLinks = document.getElementsByClassName('event-link'),
+		eventNames = document.getElementsByClassName('event-name'),
+		eventDays = document.getElementsByClassName('event-day'),
+		eventTimes = document.getElementsByClassName('event-time'),
+		eventVenueNames = document.getElementsByClassName('event-venue-name'),
+		eventGoings = document.getElementsByClassName('event-going'),
+		eventDates = document.getElementsByClassName('event-date'),
+		eventMonths = document.getElementsByClassName('event-month');
+		x < requestsJSON[1].length; x++ ) {
 
+		dateString = String(new Date(requestsJSON[1][x]['time']));
+		eventNames[x].innerHTML = requestsJSON[1][x]['name'];
+		eventLinks[x].href = requestsJSON[1][x]['link'];
+		eventDays[x].innerHTML = dateString.slice(0,3);
+		eventTimes[x].innerHTML = dateString.slice(16,21);
+		eventVenueNames[x].innerHTML = requestsJSON[1][x]['venue']['name']
+		eventGoings[x].innerHTML = requestsJSON[1][x]['yes_rsvp_count'] + ' going';
+		eventDates[x].innerHTML = dateString.slice(8,10);
+		eventMonths[x].innerHTML = dateString.slice(4,7);
+	}
 // }
-
-// <div class="event-container"> 
-// 			<a href="{event.link"> 
-// 				<h4>{event.name}</h4>
-// 				<div>{event.date} & {event.venue.name}</div>
-// 				<div>{event.yes_rsvp_count}</div>
-// 				<div class="event-sidebar">{event.date}</div>
-// 			</a>
-// 		</div>
 
 
 
