@@ -28,7 +28,7 @@ $(document).ready(function() {
 // INPUTS
 var urls = [];
 urls[0] = "https://api.meetup.com/girlcode?photo-host=public&sig_id=196092929&sig=ca1b24075a0729853813027c08cb66ade21c6443"
-urls[1] = 'https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true';
+urls[1] = 'https://api.meetup.com/ocamsterdam/events?photo-host=public&page=20&sig_id=196092929&sig=c974f71739a904b4f32f29a748e3e4635b3b885c';
 
 // REQUESTS
 for (var i = 0, requests = [], requestsJSON = []; i < urls.length; i++) {
@@ -45,11 +45,37 @@ function processMeetupData () {
 		requestsJSON[i] = JSON.parse(this.responseText);
 	}
 }
-	
+
 // DATA TO HTML
-// if (document.getElementsByClassName('contact-meetup-members')[0]) {
-// 	document.getElementsByClassName('contact-meetup-members')[0].innerHTML = requestsJSON[0].members;
+if (document.getElementsByClassName('contact-meetup-members')[0]) {
+	document.getElementsByClassName('contact-meetup-members')[0].innerHTML = requestsJSON[0].members;
+}
+
+// if (document.getElementsByClassName('calendar-container')[0]) {
+	var x = 0;
+	// for (var x = 0; x < requestsJSON[1].length; x++ ) {
+		requestsJSON[1][x]['link'];
+		requestsJSON[1][x]['name'];
+		var dateString = String(new Date(requestsJSON[1][x]['time']));
+		var day = dateString.slice(0,3);
+		var time = dateString.slice(16,21);
+		var date = dateString.slice(8,10);
+		var month = dateString.slice(4,7);
+		requestsJSON[1][x]['venue']['name'];
+		requestsJSON[1][x]['yes_rsvp_count'];
+	// }
+
+
 // }
+
+// <div class="event-container"> 
+// 			<a href="{event.link"> 
+// 				<h4>{event.name}</h4>
+// 				<div>{event.date} & {event.venue.name}</div>
+// 				<div>{event.yes_rsvp_count}</div>
+// 				<div class="event-sidebar">{event.date}</div>
+// 			</a>
+// 		</div>
 
 
 
