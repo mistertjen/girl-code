@@ -201,10 +201,10 @@ footer {
 	font-size:18px;
 }
 
-.contact-cta:hover {
+/*.contact-cta:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	color:rgb(230,230,230);
-}
+}*/
 
 	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
 	font-size:3.5vw;

@@ -1,9 +1,10 @@
 console.log("Hi Girl Coder, please make sure you join our community at meetup.com/GirlCode. Boys are welcome too!");
 
-// load nav-bar and footer bar
-$(function(){
-  $("#nav-load").load("nav.html"); 
-  $("#footer-load").load("footer.html"); 
+$(document).ready(function() {
+	$('.social-button, .social-button-footer').hover(function() {
+		$(this).effect( 'bounce', { times: 1 }, 'slow');
+
+	});
 });
 
 // slow scroll to content
@@ -40,10 +41,6 @@ $(document).ready(function() {
 	$('.social-button, .social-button-footer').mouseenter(function() {
 		$(this).effect( 'bounce', { times: 1 }, 'slow');
 	});
-});
-
-$('.contact-social-element').children().mouseenter(function() {
-	$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
 });
 
 // CONTACT-PAGE MEETUP API REQUEST
