@@ -210,3 +210,24 @@ a:hover {
 .fa {
 	margin-right:5px;
 }
+
+/*-------Team section -------*/
+
+.Headertop {
+	background: url(./images/landingspage_slider_2.jpg);
+}
+
+.contentSection-1 {
+	background: url(./images/techbg.jpeg);
+	height: 940px;
+}
+
+.contentSection-2 {
+	background-color: hsla(311, 19%, 47%, 1);
+	height: 940px;
+}
+
+.contentSection-3 {
+	background-color: hsla(156, 19%, 47%, 1);
+	height: 940px;
+}
