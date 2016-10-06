@@ -25,26 +25,34 @@ $(document).ready(function() {
 });
 
 // CONTACT-PAGE MEETUP API REQUEST
-(function() {
-	if (document.getElementsByClassName('contact-meetup-members')[0]) {
-		var meetupData = new XMLHttpRequest ();
-		// var url = "https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true";
-		var url = "https://api.meetup.com/girlcode?photo-host=public&sig_id=196092929&sig=ca1b24075a0729853813027c08cb66ade21c6443";
-		meetupData.onreadystatechange = processMeetupData;
-		meetupData.open ("GET", url , false);
-		meetupData.withCredentials = true;
-		meetupData.send();
-		meetupData;
+// INPUTS
+var urls = [];
+urls[0] = "https://api.meetup.com/girlcode?photo-host=public&sig_id=196092929&sig=ca1b24075a0729853813027c08cb66ade21c6443"
+urls[1] = 'https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true';
 
-		function processMeetupData () {
-			if (meetupData.readyState == 4 && meetupData.status == 200) {
-				var meetupJSON = JSON.parse(meetupData.responseText);
-				console.log(meetupJSON);
-				document.getElementsByClassName('contact-meetup-members')[0].innerHTML = meetupJSON.members;
-			}
-		}
+// REQUESTS
+for (var i = 0, requests = [], requestsJSON = []; i < urls.length; i++) {
+	requests[i] = new XMLHttpRequest();
+	requests[i].onreadystatechange = processMeetupData;
+	requests[i].open ("GET", urls[i], false);
+	requests[i].withCredentials = true;
+	requests[i].send();
+}
+
+// JSON PARSING
+function processMeetupData () {
+	if (this.readyState == 4 && this.status == 200) {
+		requestsJSON[i] = JSON.parse(this.responseText);
 	}
-})();
+}
+	
+// DATA TO HTML
+// if (document.getElementsByClassName('contact-meetup-members')[0]) {
+// 	document.getElementsByClassName('contact-meetup-members')[0].innerHTML = requestsJSON[0].members;
+// }
+
+
+
 
 // CORS REQUEST
 // // Create the XHR object.
