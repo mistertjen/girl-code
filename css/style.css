@@ -48,6 +48,11 @@ footer {
 	padding: 10px;
 	color: #777;
 }
+/*body {
+	background-image: url("./../images/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}*/
 
 .contact-cta-container {
 	text-align:center;
@@ -63,7 +68,7 @@ footer {
 	border:none;
 	box-shadow: none;
 	background: none;
-
+	
 	background-image: url("./../images/meetup_icon_clean.png");
 	background-repeat: no-repeat;
 	background-position: center;
