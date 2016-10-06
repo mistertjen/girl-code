@@ -18,7 +18,8 @@ $('.scroll').click(function(event){
 (function() {
 	if (document.getElementsByClassName('contact-meetup-members')[0]) {
 		var meetupData = new XMLHttpRequest ();
-		var url = "https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true";
+		// var url = "https://api.meetup.com/girlcode?key=127665234c6233e565b1d791de6873&sign=true";
+		var url = "https://api.meetup.com/girlcode?photo-host=public&sig_id=196092929&sig=ca1b24075a0729853813027c08cb66ade21c6443";
 		meetupData.onreadystatechange = processMeetupData;
 		meetupData.open ("GET", url , false);
 		meetupData.withCredentials = true;
