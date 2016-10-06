@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-	box-shadow: 0px 10px 20px black;
+	box-shadow: 0px 10px 40px black;
 }
 
 #navbar-logo {
@@ -93,7 +93,7 @@ body {
 }
 
 .about-me {
-	box-shadow: 10px 10px 20px black, 10px -10px 20px black;
+	box-shadow: 10px 10px 40px black, 10px -10px 40px black;
 	background-color: #fdfdfd;
 	z-index: 30;
 	position: relative;
@@ -106,6 +106,8 @@ body {
 }
 
 footer {
+	margin-top: 100px;
+	box-shadow: 0px -10px 40px black;
 	padding: 10px;
 	color: #777;
 	z-index: 40;
