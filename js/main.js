@@ -2,19 +2,19 @@ console.log("Hi Girl Coder, please make sure you join our community at meetup.co
 
 // bounce social buttons
 $(document).ready(function() {
-  $('.social-button, .social-button-footer').hover(function() {
-    $(this).effect( 'bounce', { times: 1 }, 'slow');
+	$('.social-button, .social-button-footer').hover(function() {
+		$(this).effect( 'bounce', { times: 1 }, 'slow');
 
-  });
+	});
 });
 
 // slow scroll to content
 $('.scroll').click(function(event){
 	event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1250);
-    return false;
+	$('html, body').animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 1250);
+	return false;
 });
 
 // fade in and out background image landingspage
@@ -32,6 +32,13 @@ $(function(){
 
 $('.contact-social-element').children().mouseenter(function() {
 	$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
+$(document).ready(function() {
+	$('.contact-cta').mouseenter(function(){
+		$(this).effect( 'bounce', { distance: 10, times: 1 }, 'slow');
+	});
+	$('.contact-social-element').children().mouseenter(function() {
+		$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
+	});
 });
 
 // CONTACT-PAGE MEETUP API REQUEST

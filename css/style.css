@@ -176,10 +176,10 @@ footer {
 	font-size:18px;
 }
 
-.contact-cta:hover {
+/*.contact-cta:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	color:rgb(230,230,230);
-}
+}*/
 
 .contact-meetup-members {
 	font-size:42px;
