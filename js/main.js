@@ -14,6 +14,7 @@ $('.scroll').click(function(event){
     }, 1250);
     return false;
 });
+
 // CONTACT-PAGE MEETUP API REQUEST
 (function() {
 	if (document.getElementsByClassName('contact-meetup-members')[0]) {
