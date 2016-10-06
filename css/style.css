@@ -26,7 +26,6 @@ body {
 .bg-image {
 	width: 100%;
 	height: inherit;
-	object-fit: contain;
 	/*display: flex;
 	align-items: center;*/
 	position: absolute;
