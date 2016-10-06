@@ -1,5 +1,5 @@
 body {
-	background-image: url("../images/landingpage_slider_1.jpeg");
+	/*background-image: url("../images/landingpage_slider_1.jpeg");
 	background-image: url("../images/landingspage_slider_2.jpg");
 	background-image: url("../images/landingspage_slider_3.JPG");
 	background-image: url("../images/landingspage_slider_4.jpg");
@@ -7,6 +7,7 @@ body {
 	background-image: url("../images/landingspage_slider_6.JPG");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;*/
 }
 
 .navbar {
@@ -17,10 +18,27 @@ body {
 	max-height: 100%;
 }
 
-#cover-logo {
+#contains-all {
 	height: 100%;
+	position: relative;
+}
+
+.bg-image {
+	width: 100%;
+	height: inherit;
 	display: flex;
 	align-items: center;
+	position: absolute;
+	z-index: 10;
+}
+
+#cover-logo {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 20;
 }
 
 #header-logo {
