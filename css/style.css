@@ -1,8 +1,20 @@
 body {
+<<<<<<< HEAD
 	background-image: url(../images/background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
     background-attachment: fixed;
+=======
+	/*background-image: url("../images/landingpage_slider_1.jpeg");
+	background-image: url("../images/landingspage_slider_2.jpg");
+	background-image: url("../images/landingspage_slider_3.JPG");
+	background-image: url("../images/landingspage_slider_4.jpg");
+	background-image: url("../images/landingspage_slider_5.jpeg");
+	background-image: url("../images/landingspage_slider_6.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+>>>>>>> e6df8f4fa7a3f8a867da71c6da4f44c1b13f7058
 }
 
 .navbar {
@@ -19,6 +31,7 @@ body {
 }
 
 .bg-image {
+<<<<<<< HEAD
 	position: absolute;
 	z-index: 10;
 	filter: grayscale(50%);
@@ -64,12 +77,24 @@ body {
 }
 
 #white-bg {
+=======
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 10;
+}
+
+#cover-logo {
+>>>>>>> e6df8f4fa7a3f8a867da71c6da4f44c1b13f7058
 	width: 100%;
 	height: inherit;
 	display: flex;
 	align-items: center;
 	position: absolute;
 	z-index: 20;
+<<<<<<< HEAD
 	opacity: 0.3;
 }
 
@@ -80,6 +105,8 @@ body {
 	align-items: center;
 	position: absolute;
 	z-index: 30;
+=======
+>>>>>>> e6df8f4fa7a3f8a867da71c6da4f44c1b13f7058
 }
 
 #header-logo {
