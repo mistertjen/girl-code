@@ -213,3 +213,48 @@ a:hover {
 
 /*-------Team section -------*/
 
+.content-section-1 {
+
+background: -moz-linear-gradient(45deg, hsla(0,2%,49%,1) 0%, hsla(0,26%,86%,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, hsla(0,2%,49%,1) 0%,hsla(0,26%,86%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, hsla(0,2%,49%,1) 0%,hsla(0,26%,86%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f7979', endColorstr='#e5d3d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+margin: 0px, 0px, 20px, 0px;
+
+}
+
+.content-section-2 {
+
+
+background: -moz-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%, hsla(0,2%,49%,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d3d3', endColorstr='#7f7979',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+margin-top: : 50px;
+margin-bottom: 50px;
+}
+
+.content-section-3 {
+
+
+background: -moz-linear-gradient(45deg, hsla(0,2%,49%,1) 0%, hsla(0,26%,86%,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, hsla(0,2%,49%,1) 0%,hsla(0,26%,86%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, hsla(0,2%,49%,1) 0%,hsla(0,26%,86%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f7979', endColorstr='#e5d3d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+margin: 0px, 0px, 20px, 0px;
+}
