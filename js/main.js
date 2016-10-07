@@ -1,7 +1,7 @@
 console.log("Hi Girl Coder, please make sure you join our community at meetup.com/GirlCode. Boys are welcome too!");
 
 $(document).ready(function() {
-	$('.social-button, .social-button-footer').hover(function() {
+	$('.social-button, .social-button-footer').mouseenter(function() {
 		$(this).effect( 'bounce', { times: 1 }, 'slow');
 
 	});
@@ -49,6 +49,8 @@ var urls = [];
 urls[0] = "https://api.meetup.com/girlcode?photo-host=public&sig_id=196092929&sig=ca1b24075a0729853813027c08cb66ade21c6443"
 urls[1] = 'https://api.meetup.com/ocamsterdam/events?photo-host=public&page=5&sig_id=196092929&sig=1f20a3049b0ce2de8d1341dffa1d6c32323f879e';
 // capped at 5 upcoming events, edit page=5 in url for to increase/decrease.
+// ALSO Show past events
+// Add Konami Code funny business
 
 // REQUESTS
 for (var i = 0, requests = [], requestsJSON = []; i < urls.length; i++) {

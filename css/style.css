@@ -198,13 +198,17 @@ footer {
 	margin:0px;
 	padding:10% 20%;
 	color:white;
-	font-size:18px;
+	font-size:38px;
 }
 
-/*.contact-cta:hover {
+.contact-cta:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
-	color:rgb(230,230,230);
-}*/
+	/*color:rgb(230,230,230);*/
+}
+
+/*Alleen op de tekst.??*/
+/*Make everything bigger.*/
+/*Continue styling.*/
 
 	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
 	font-size:3.5vw;
