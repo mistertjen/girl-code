@@ -17,153 +17,81 @@
 <body id="top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav scroll" href="#top">
-                    <img id="navbar-logo" src="./images/logo.png">
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                       <!-- dropdown for team -->
-                       <div class="dropdown">
-                          <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <a href="#">Teams</a>
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Ineke</a></li>
-                            <li><a href="#">Katja</a></li>
-                            <li><a href="#">Kristin</a></li>
-                        </ul>
-                    </div>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+    <div id="nav-load"></div>
 
-<!-- container for background image, white image for filter effect and header logo and icons-->
-<div id="contains-all">
-    <!-- background images that fade in and fade out-->
-    <div class="bg-image" id="picture1"></div>
-    <div class="bg-image" id="picture2"></div>
-    <div class="bg-image" id="picture3"></div>
-    <div class="bg-image" id="picture4"></div>
-    <div class="bg-image" id="picture5"></div>
-    <div class="bg-image" id="picture6"></div>
-    <!-- white image on top of background images for filter effect-->
-    <div id="white-bg" style="background-image:url(./images/white-bg.jpg)"></div>
+    <!-- container for background image, white image for filter effect and header logo and icons-->
+    <div id="contains-all">
+        <!-- background images that fade in and fade out-->
+        <div class="bg-image" id="picture1"></div>
+        <div class="bg-image" id="picture2"></div>
+        <div class="bg-image" id="picture3"></div>
+        <div class="bg-image" id="picture4"></div>
+        <div class="bg-image" id="picture5"></div>
+        <div class="bg-image" id="picture6"></div>
+        <!-- white image on top of background images for filter effect-->
+        <div id="white-bg" style="background-image:url(./images/white-bg.jpg)"></div>
 
 
-    <!-- Header over background images animation, with logo and social buttons -->
+        <!-- Header over background images animation, with logo and social buttons -->
 
-    <div id="cover-logo" class="intro-header">
-        <div class="container-header">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <img id="header-logo" src="./images/logo.png">
-                        <hr class="intro-divider">
-                                <!-- meetup -->
-                                <a href="https://www.meetup.com/girlcode/"> 
-                                    <img class="social-button" src="./images/button_meetup.png">
-                                </a>
+        <div id="cover-logo" class="intro-header">
+            <div class="container-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <img id="header-logo" src="./images/logo.png">
+                            <hr class="intro-divider">
+                            <!-- meetup -->
+                            <a href="https://www.meetup.com/girlcode/"> 
+                                <img class="social-button" src="./images/button_meetup.png">
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
+            <!-- /.container -->
 
         </div>
-        <!-- /.container -->
+        <!-- /.intro-header -->
 
-    </div>
-    <!-- /.intro-header -->
+    </div> <!-- end of .contains-all-->
 
-</div> <!-- end of .contains-all-->
+    <!-- About -->
 
-<!-- About -->
+    <div id="about" class="about-me">
 
-<div id="about" class="about-me">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">About Girl Code</h2>
-                <p class="lead">We are <a href="#">Ineke</a>, <a href="#">Katja</a> and <a href="#">Kristin</a>. Girl Code is an initiative founded in 2015 by Ineke at Q42. Now Girl Code is an independent community to inspire girls of all ages to get into code or stay into code. We also aim to raise awareness of the gender gap in tech, so boys are welcome too! We think the world of software engineering can only benefit from having more women on board and creating a more diverse field.<br><br>
-
-                    Professional coders aren't necessarily male. That is what we see as an undeniable fact, but also as a statement we want to enforce in the real world. That's why we hope you'll join us in making this difference.<br><br>
-
-                    Want to host our next meetup? Interested in speaking or mentoring at any of the following events? Have a topic you think we should discuss or bring to light? Feel free to <a href="#">contact us</a> anytime!</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-
-    </div>
-    <!-- /.about -->
-
-    <!-- Footer --> 
-    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10">
-                    <p>Tackling the gender gap in code</p>
-                </div>
-                <div class="col-lg-2">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.meetup.com/girlcode/"> 
-                               <img class="social-button-footer" src="./images/button_meetup.png">
-                           </a>
-                       </li>
-                       <li>
-                        <a href="https://twitter.com/GirlCodeNL">
-                            <img class="social-button-footer" src="./images/button_twitter.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/GirlCodeNL/">
-                            <img class="social-button-footer" src="./images/button_facebook.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+                <div class="col-lg-12 col-sm-12">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">About Girl Code</h2>
+                    <p class="lead">We are <a href="#">Ineke</a>, <a href="#">Katja</a> and <a href="#">Kristin</a>. Girl Code is an initiative founded in 2015 by Ineke at Q42. Now Girl Code is an independent community to inspire girls of all ages to get into code or stay into code. We also aim to raise awareness of the gender gap in tech, so boys are welcome too! We think the world of software engineering can only benefit from having more women on board and creating a more diverse field.<br><br>
 
-<!-- jQuery -->
-<script src="./js/jquery-3.1.1.min.js"></script>
-<script src="./js/jquery-ui.min.js"></script>
-<!-- Bootstrap js -->
-<script src="./js/bootstrap.min.js"></script>
-<!-- our own js -->
-<script src="./js/main.js"></script>
+                        Professional coders aren't necessarily male. That is what we see as an undeniable fact, but also as a statement we want to enforce in the real world. That's why we hope you'll join us in making this difference.<br><br>
+
+                        Want to host our next meetup? Interested in speaking or mentoring at any of the following events? Have a topic you think we should discuss or bring to light? Feel free to <a href="#">contact us</a> anytime!</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+
+        </div>
+        <!-- /.about -->
+
+    <!-- Footer --> 
+    <div id="footer-load"></div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- our own js -->
+    <script src="./js/main.js"></script>
 
 </body>
 

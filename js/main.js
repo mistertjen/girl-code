@@ -1,6 +1,10 @@
 console.log("Hi Girl Coder, please make sure you join our community at meetup.com/GirlCode. Boys are welcome too!");
 
-// bounce social buttons
+// load nav-bar and footer bar
+$(function(){
+  $("#nav-load").load("nav.html"); 
+  $("#footer-load").load("footer.html"); 
+});
 
 // slow scroll to content
 $('.scroll').click(function(event){
