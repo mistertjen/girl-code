@@ -178,8 +178,8 @@ footer {
 	margin:0px;
 	padding:10% 20%;
 	color:white;
-
-	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
+	
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
 	font-size:3.5vw;
 	/**/
 }
@@ -201,6 +201,17 @@ footer {
 .contact-social-links-container {
 	text-align:center;
 }
+
+/*
+.contact-cta:hover {
+	background-image: url("./../images/meetup_icon_clean_light.png");
+	/*color:rgb(230,230,230);
+}*/
+
+/*Alleen op de tekst.??*/
+/*Make everything bigger.*/
+/*Continue styling.*/
+
 
 .contact-social-links-container ul {
 	display:inline-block;
@@ -224,6 +235,14 @@ a {
 #contact a:hover {
 	text-decoration: none;
 	color:inherit;
+}
+
+a {
+	color:inherit;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 .fa {
