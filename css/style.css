@@ -1,26 +1,112 @@
 body {
-	background-image: url("../images/landingpage_slider_1.jpeg");
-	background-image: url("../images/landingspage_slider_2.jpg");
-	background-image: url("../images/landingspage_slider_3.JPG");
-	background-image: url("../images/landingspage_slider_4.jpg");
-	background-image: url("../images/landingspage_slider_5.jpeg");
-	background-image: url("../images/landingspage_slider_6.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
 }
 
 .navbar {
-	box-shadow: 0px 10px 20px black;
+	box-shadow: 0px 10px 40px black;
 }
 
 #navbar-logo {
 	max-height: 100%;
 }
 
-#cover-logo {
+.dropdown-toggle {
+    border: none;
+    background-color: #f8f8f8;
+    height: 50px;
+    padding: 10px 15px 10px 15px;
+}
+
+.dropdown-toggle a {
+	color: #777;
+	cursor: auto;
+	text-decoration: none;
+}
+
+.dropdown-toggle a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.caret {
+	color: #777;
+}
+
+.dropdown-menu li a {
+	color: #777;
+	font-weight: bold;
+}
+
+#contains-all {
 	height: 100%;
+	position: relative;
+}
+
+.bg-image {
+	position: absolute;
+	z-index: 10;
+	filter: grayscale(50%);
+}
+
+#picture1 {
+	background: url(../images/landingpage_slider_1.jpeg) no-repeat center center fixed; 
+}
+
+#picture2 {
+	background: url(../images/landingspage_slider_2.jpg) no-repeat center center fixed; 
+}
+
+#picture3 {
+	background: url(../images/landingspage_slider_3.JPG) no-repeat center center fixed; 
+}
+
+#picture4 {
+	background: url(../images/landingspage_slider_4.jpg) no-repeat center center fixed; 
+}
+
+#picture5 {
+	background: url(../images/landingspage_slider_5.jpeg) no-repeat center center fixed; 
+}
+
+#picture6 {
+	background: url(../images/landingspage_slider_6.JPG) no-repeat center center fixed; 
+}
+
+#picture1,
+#picture2,
+#picture3,
+#picture4,
+#picture5,
+#picture6 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#white-bg {
+	width: 100%;
+	height: inherit;
 	display: flex;
 	align-items: center;
+	position: absolute;
+	z-index: 20;
+	opacity: 0.3;
+}
+
+#cover-logo {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 30;
 }
 
 #header-logo {
@@ -34,8 +120,10 @@ body {
 }
 
 .about-me {
-	box-shadow: 10px 10px 20px black, 10px -10px 20px black;
+	box-shadow: 10px 10px 40px black, 10px -10px 40px black;
 	background-color: #fdfdfd;
+	z-index: 30;
+	position: relative;
 }
 
 .social-button-footer, .social-button-contact {
@@ -52,78 +140,90 @@ body {
 
 
 footer {
+	margin-top: 100px;
+	box-shadow: 0px -10px 40px black;
 	padding: 10px;
 	color: #777;
+	z-index: 40;
+	position: relative;
 }
 
-/*body {
-	background-image: url("./../images/background.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-}*/
-
-/*TEMP*/
-body {
-	background-image:none;
-	font-family:helvetica,sans-serif;
-}
 
 /**/
 
-.contact-cta-container {
+#contact .cta-join-container {
 	text-align:center;
+	margin:0px auto;
 
-	/*temp*/
-	margin-top:70px;
-	margin-bottom:70px;
+	/*CONTROLLER*/
+	max-width:50%;
+	/**/
 }
 
-.contact-cta {
-	/*RESETS*/
-	border:none;
-	box-shadow: none;
-	background: none;
-	
+#contact .cta-join-bg {
 	background-image: url("./../images/meetup_icon_clean.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 82%;
-	border-radius:50%;
-	
-	padding:150px;
-	color:white;
-	font-size:38px;
+	background-size: 100%;
+	padding:20% 10%;
 }
 
-.contact-cta:hover {
+#contact .cta-join-button{
+	/*BUTTON RESETS*/
+	border:none;
+	box-shadow: none;
+	background: none;
+	/**/
+	text-align: center;
+	margin:0px;
+	padding:10% 20%;
+	color:white;
+
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
+	font-size:3.5vw;
+	/**/
+}
+
+#contact .cta-join-members {
+	margin:5px;
+
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
+	font-size:9vw;
+	/**/
+}
+
+/*#contact .cta-join-button:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	/*color:rgb(230,230,230);*/
-}
 
 /*Alleen op de tekst.??*/
-/*Make everything bigger.*/
-/*Continue styling.*/
 
-.contact-meetup-members {
-	font-size:72px;
-	margin:5px;
+.contact-social-links-container {
+	text-align:center;
 }
+
+.contact-social-links-container ul {
+	display:inline-block;
+	vertical-align: text-top;
+}
+
+
 
 .contact-gc-social-links li, .contact-team-social-links li {
 	list-style: none;
-	margin:6px;
+	margin:10px;
 }
 
 .contact-team-social-links {
-	margin-top:40px;
 }
 
 a {
 	color:inherit;
 }
 
-a:hover {
+#contact a:hover {
 	text-decoration: none;
+	color:inherit;
 }
 
 .fa {
