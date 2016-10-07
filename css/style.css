@@ -228,14 +228,6 @@ footer {
 	/**/
 }
 
-#contact .cta-join-members {
-	margin:5px;
-
-	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
-	font-size:9vw;
-	/**/
-}
-
 /*#contact .cta-join-button:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	/*color:rgb(230,230,230);*/
@@ -271,7 +263,6 @@ footer {
 	display:inline-block;
 	vertical-align: text-top;
 }
-
 
 .contact-gc-social-links li, .contact-team-social-links li {
 	list-style: none;
