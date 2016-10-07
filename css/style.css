@@ -1,26 +1,112 @@
 body {
-	background-image: url("../images/landingpage_slider_1.jpeg");
-	background-image: url("../images/landingspage_slider_2.jpg");
-	background-image: url("../images/landingspage_slider_3.JPG");
-	background-image: url("../images/landingspage_slider_4.jpg");
-	background-image: url("../images/landingspage_slider_5.jpeg");
-	background-image: url("../images/landingspage_slider_6.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
 }
 
 .navbar {
-	box-shadow: 0px 10px 20px black;
+	box-shadow: 0px 10px 40px black;
 }
 
 #navbar-logo {
 	max-height: 100%;
 }
 
-#cover-logo {
+.dropdown-toggle {
+    border: none;
+    background-color: #f8f8f8;
+    height: 50px;
+    padding: 10px 15px 10px 15px;
+}
+
+.dropdown-toggle a {
+	color: #777;
+	cursor: auto;
+	text-decoration: none;
+}
+
+.dropdown-toggle a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.caret {
+	color: #777;
+}
+
+.dropdown-menu li a {
+	color: #777;
+	font-weight: bold;
+}
+
+#contains-all {
 	height: 100%;
+	position: relative;
+}
+
+.bg-image {
+	position: absolute;
+	z-index: 10;
+	filter: grayscale(50%);
+}
+
+#picture1 {
+	background: url(../images/landingpage_slider_1.jpeg) no-repeat center center fixed; 
+}
+
+#picture2 {
+	background: url(../images/landingspage_slider_2.jpg) no-repeat center center fixed; 
+}
+
+#picture3 {
+	background: url(../images/landingspage_slider_3.JPG) no-repeat center center fixed; 
+}
+
+#picture4 {
+	background: url(../images/landingspage_slider_4.jpg) no-repeat center center fixed; 
+}
+
+#picture5 {
+	background: url(../images/landingspage_slider_5.jpeg) no-repeat center center fixed; 
+}
+
+#picture6 {
+	background: url(../images/landingspage_slider_6.JPG) no-repeat center center fixed; 
+}
+
+#picture1,
+#picture2,
+#picture3,
+#picture4,
+#picture5,
+#picture6 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#white-bg {
+	width: 100%;
+	height: inherit;
 	display: flex;
 	align-items: center;
+	position: absolute;
+	z-index: 20;
+	opacity: 0.3;
+}
+
+#cover-logo {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 30;
 }
 
 #header-logo {
@@ -34,8 +120,10 @@ body {
 }
 
 .about-me {
-	box-shadow: 10px 10px 20px black, 10px -10px 20px black;
+	box-shadow: 10px 10px 40px black, 10px -10px 40px black;
 	background-color: #fdfdfd;
+	z-index: 30;
+	position: relative;
 }
 
 .social-button-footer {
@@ -45,15 +133,13 @@ body {
 }
 
 footer {
+	margin-top: 100px;
+	box-shadow: 0px -10px 40px black;
 	padding: 10px;
 	color: #777;
+	z-index: 40;
+	position: relative;
 }
-
-/*body {
-	background-image: url("./../images/background.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-}*/
 
 .contact-cta-container {
 	text-align:center;
