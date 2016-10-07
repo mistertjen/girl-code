@@ -54,6 +54,7 @@ body {
 }
 
 #picture1 {
+<<<<<<< 2a91c522572b9a5193be5bd0b120eba12e8692f2
 	background: url(../images/landingpage_slider_1-min.jpeg) no-repeat center center fixed; 
 }
 
@@ -75,6 +76,29 @@ body {
 
 #picture6 {
 	background: url(../images/landingspage_slider_6-min.JPG) no-repeat center center fixed; 
+=======
+	background: url(../images/landingpage_slider_1.jpeg) no-repeat center center fixed; 
+}
+
+#picture2 {
+	background: url(../images/landingspage_slider_2.jpg) no-repeat center center fixed; 
+}
+
+#picture3 {
+	background: url(../images/landingspage_slider_3.JPG) no-repeat center center fixed; 
+}
+
+#picture4 {
+	background: url(../images/landingspage_slider_4.jpg) no-repeat center center fixed; 
+}
+
+#picture5 {
+	background: url(../images/landingspage_slider_5.jpeg) no-repeat center center fixed; 
+}
+
+#picture6 {
+	background: url(../images/landingspage_slider_6.JPG) no-repeat center center fixed; 
+>>>>>>> solving merge conflict
 }
 
 #picture1,
@@ -198,17 +222,25 @@ footer {
 	margin:0px;
 	padding:10% 20%;
 	color:white;
-	font-size:38px;
+
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
+	font-size:3.5vw;
+	/**/
 }
 
-.contact-cta:hover {
+#contact .cta-join-members {
+	margin:5px;
+
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
+	font-size:9vw;
+	/**/
+}
+
+/*#contact .cta-join-button:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	/*color:rgb(230,230,230);*/
-}
 
 /*Alleen op de tekst.??*/
-/*Make everything bigger.*/
-/*Continue styling.*/
 
 	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
 	font-size:3.5vw;
@@ -241,7 +273,6 @@ footer {
 }
 
 
-
 .contact-gc-social-links li, .contact-team-social-links li {
 	list-style: none;
 	margin:10px;
@@ -257,14 +288,6 @@ a {
 #contact a:hover {
 	text-decoration: none;
 	color:inherit;
-}
-
-a {
-	color:inherit;
-}
-
-a:hover {
-	text-decoration: none;
 }
 
 .fa {
