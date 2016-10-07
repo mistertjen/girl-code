@@ -27,17 +27,15 @@ $(function(){
             $this.remove().css('display','block');
             $parent.prepend($this);
         });
-    
     },3500);
+});
 
-$('.contact-social-element').children().mouseenter(function() {
-	$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
 $(document).ready(function() {
 	$('.contact-cta').mouseenter(function(){
 		$(this).effect( 'bounce', { distance: 10, times: 1 }, 'slow');
 	});
 	$('.contact-social-element').children().mouseenter(function() {
-		$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
+		$(this).children('img').effect( 'bounce', { distance: 10, times: 1 }, 'slow');
 	});
 });
 

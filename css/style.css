@@ -151,60 +151,81 @@ footer {
 
 /**/
 
-.contact-cta-container {
+#contact .cta-join-container {
 	text-align:center;
+	margin:0px auto;
 
-	/*temp*/
-	margin-top:70px;
-	margin-bottom:70px;
+	/*CONTROLLER*/
+	max-width:50%;
+	/**/
 }
 
-.contact-cta {
-	/*RESETS*/
-	border:none;
-	box-shadow: none;
-	background: none;
-	
+#contact .cta-join-bg {
 	background-image: url("./../images/meetup_icon_clean.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 82%;
-	border-radius:50%;
-	
-	padding:150px;
-	color:white;
-	font-size:38px;
+	background-size: 100%;
+	padding:20% 10%;
 }
 
-.contact-cta:hover {
+#contact .cta-join-button{
+	/*BUTTON RESETS*/
+	border:none;
+	box-shadow: none;
+	background: none;
+	/**/
+	text-align: center;
+	margin:0px;
+	padding:10% 20%;
+	color:white;
+
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
+	font-size:3.5vw;
+	/**/
+}
+
+#contact .cta-join-members {
+	margin:5px;
+
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
+	font-size:9vw;
+	/**/
+}
+
+/*#contact .cta-join-button:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	/*color:rgb(230,230,230);*/
-}
+
+
 
 /*Alleen op de tekst.??*/
-/*Make everything bigger.*/
-/*Continue styling.*/
 
-.contact-meetup-members {
-	font-size:72px;
-	margin:5px;
+.contact-social-links-container {
+	text-align:center;
 }
+
+.contact-social-links-container ul {
+	display:inline-block;
+	vertical-align: text-top;
+}
+
+
 
 .contact-gc-social-links li, .contact-team-social-links li {
 	list-style: none;
-	margin:6px;
+	margin:10px;
 }
 
 .contact-team-social-links {
-	margin-top:40px;
 }
 
 a {
 	color:inherit;
 }
 
-a:hover {
+#contact a:hover {
 	text-decoration: none;
+	color:inherit;
 }
 
 .fa {
