@@ -100,6 +100,19 @@ body {
 	opacity: 0.3;
 }
 
+.container-header {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+}
+
+.intro-header {
+	padding: 0px;
+	margin-top: 20px;
+}
+
 #cover-logo {
 	width: 100%;
 	height: inherit;
@@ -110,13 +123,19 @@ body {
 }
 
 #header-logo {
-	max-width: 50%;
+	max-width: 60%;
 	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
 }
 
+.intro-divider {
+	max-width: 70%;
+}
+
 .social-button {
-	max-width: 50px;
+	max-width: 10%;
 	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
+	z-index: 35;
+	position: relative;
 }
 
 .about-me {

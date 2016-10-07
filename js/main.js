@@ -1,12 +1,6 @@
 console.log("Hi Girl Coder, please make sure you join our community at meetup.com/GirlCode. Boys are welcome too!");
 
 // bounce social buttons
-$(document).ready(function() {
-	$('.social-button, .social-button-footer').mouseenter(function() {
-		$(this).effect( 'bounce', { times: 1 }, 'slow');
-
-	});
-});
 
 // slow scroll to content
 $('.scroll').click(function(event){
@@ -29,15 +23,17 @@ $(function(){
         });
     
     },3500);
+});
 
-$('.contact-social-element').children().mouseenter(function() {
-	$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
 $(document).ready(function() {
 	$('.contact-cta').mouseenter(function(){
 		$(this).effect( 'bounce', { distance: 10, times: 1 }, 'slow');
 	});
 	$('.contact-social-element').children().mouseenter(function() {
 		$(this).children('img').effect( 'bounce', { times: 1 }, 'slow');
+	});	
+	$('.social-button, .social-button-footer').mouseenter(function() {
+		$(this).effect( 'bounce', { times: 1 }, 'slow');
 	});
 });
 
