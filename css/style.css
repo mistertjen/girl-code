@@ -171,18 +171,22 @@ footer {
 	background-size: 82%;
 	border-radius:50%;
 	
-	padding:80px;
+	padding:150px;
 	color:white;
-	font-size:18px;
+	font-size:38px;
 }
 
-/*.contact-cta:hover {
+.contact-cta:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
-	color:rgb(230,230,230);
-}*/
+	/*color:rgb(230,230,230);*/
+}
+
+/*Alleen op de tekst.??*/
+/*Make everything bigger.*/
+/*Continue styling.*/
 
 .contact-meetup-members {
-	font-size:42px;
+	font-size:72px;
 	margin:5px;
 }
 
