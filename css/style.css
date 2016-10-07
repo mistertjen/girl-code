@@ -184,14 +184,6 @@ footer {
 	/**/
 }
 
-#contact .cta-join-members {
-	margin:5px;
-
-	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
-	font-size:9vw;
-	/**/
-}
-
 /*#contact .cta-join-button:hover {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	/*color:rgb(230,230,230);*/
@@ -202,23 +194,10 @@ footer {
 	text-align:center;
 }
 
-/*
-.contact-cta:hover {
-	background-image: url("./../images/meetup_icon_clean_light.png");
-	/*color:rgb(230,230,230);
-}*/
-
-/*Alleen op de tekst.??*/
-/*Make everything bigger.*/
-/*Continue styling.*/
-
-
 .contact-social-links-container ul {
 	display:inline-block;
 	vertical-align: text-top;
 }
-
-
 
 .contact-gc-social-links li, .contact-team-social-links li {
 	list-style: none;
@@ -235,14 +214,6 @@ a {
 #contact a:hover {
 	text-decoration: none;
 	color:inherit;
-}
-
-a {
-	color:inherit;
-}
-
-a:hover {
-	text-decoration: none;
 }
 
 .fa {
