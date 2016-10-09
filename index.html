@@ -41,53 +41,31 @@
                         <a class="scroll" href="#about">About</a>
                     </li>
                     <li>
-<<<<<<< 9fa008c4869337c44ef6bd3126165bd961cb3020
-                       <!-- dropdown for team -->
-                       <div class="dropdown">
-                          <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <a href="team.html">Team</a>
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="team.html#ineke">Ineke</a></li>
-                            <li><a href="team.html#katja">Katja</a></li>
-                            <li><a href="team.html#kristin">Kristin</a></li>
-                        </ul>
-                    </div>
-                    </li>
-                    <li>
-                        <a href="events.html">Events</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        <!-- /.navbar-collapse -->
-=======
                      <!-- dropdown for team -->
                      <div class="dropdown">
                       <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <a href="#">Teams</a>
+                        <a href="team.html">Team</a>
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Ineke</a></li>
-                        <li><a href="#">Katja</a></li>
-                        <li><a href="#">Kristin</a></li>
+                        <li><a href="team.html#ineke">Ineke</a></li>
+                        <li><a href="team.html#katja">Katja</a></li>
+                        <li><a href="team.html#kristin">Kristin</a></li>
                     </ul>
                 </div>
             </li>
             <li>
-                <a href="#">Events</a>
+                <a href="events.html">Events</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </li>
         </ul>
->>>>>>> icon photoshopped & implemented, calendar css, bootstrap cols, past events API call
     </div>
     <!-- /.navbar-collapse -->
+
+</div>
+<!-- /.navbar-collapse -->
 </div>
 <!-- /.container -->
 </nav>
@@ -108,47 +86,32 @@
     <!-- Header over background images animation, with logo and social buttons -->
 
     <div id="cover-logo" class="intro-header">
-<<<<<<< 9fa008c4869337c44ef6bd3126165bd961cb3020
         <div class="container-header">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <img id="header-logo" src="./images/logo.png">
                         <hr class="intro-divider">
-                                <!-- meetup -->
-                                <a href="https://www.meetup.com/girlcode/"> 
-                                    <img class="social-button" src="./images/button_meetup.png">
+                        <div class="cta-join-container">
+                            <div class="cta-join-bg">
+                                <a href="https://www.meetup.com/girlcode">
+                                    <button class='cta-join-button'>
+                                        Join our <br>
+                                        <span class='cta-join-members'>367</span> <br> 
+                                        girl coders
+                                    </button>
                                 </a>
-=======
-        <div class="container">
-         <div class="banner-image" style="background-image:url(../images/landingpage_slider_1.jpeg)"></div>
-         <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-message">
-                    <img id="header-logo" src="./images/logo.png">
-                    <hr class="intro-divider">
-                    <div class="cta-join-container">
-                        <div class="cta-join-bg">
-
-                            <a href="https://www.meetup.com/girlcode">
-                                <button class='cta-join-button'>
-                                    Join our <br>
-                                    <span class='cta-join-members'>367</span> <br> 
-                                    girl coders
-                                </button>
-                            </a>
+                            </div>
                         </div>
->>>>>>> icon photoshopped & implemented, calendar css, bootstrap cols, past events API call
                     </div>
                 </div>
             </div>
+
         </div>
+        <!-- /.container -->
 
     </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.intro-header -->
+    <!-- /.intro-header -->
 
 </div> <!-- end of .contains-all-->
 
@@ -177,7 +140,7 @@
     </div>
     <!-- /.about -->
 
-     <!-- FOR AFTER Node-lecture: loading in footer.html via jQuery so we don't have to copy-paste the code in all pages --> 
+    <!-- FOR AFTER Node-lecture: loading in footer.html via jQuery so we don't have to copy-paste the code in all pages --> 
     <!-- <div id="footer-"></div> -->
 
     <!-- Footer --> 
@@ -191,10 +154,10 @@
                     <ul class="list-inline">
                         <li>
                             <a href="https://www.meetup.com/girlcode/"> 
-                             <img class="social-button-footer" src="./images/button_meetup.png">
-                         </a>
-                     </li>
-                     <li>
+                               <img class="social-button-footer" src="./images/button_meetup.png">
+                           </a>
+                       </li>
+                       <li>
                         <a href="https://twitter.com/GirlCodeNL">
                             <img class="social-button-footer" src="./images/button_twitter.png">
                         </a>
