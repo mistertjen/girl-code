@@ -31,7 +31,7 @@ $(function(){
 });
 
 $(document).ready(function() {
-	$('.contact-cta').mouseenter(function(){
+	$('.contact-cta, .cta-join-container').mouseenter(function(){
 		$(this).effect( 'bounce', { distance: 10, times: 1 }, 'slow');
 	});
 
