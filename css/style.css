@@ -49,32 +49,32 @@ body {
 
 .bg-image {
 	position: absolute;
-	z-index: 10;
-	filter: grayscale(50%);
+	width: 100%;
+	height: 100%;
 }
 
 #picture1 {
-	background: url(../images/landingpage_slider_1-min.jpeg) no-repeat center center fixed; 
+	background: url(../images/landingpage_slider_1-min.jpeg); 
 }
 
 #picture2 {
-	background: url(../images/landingspage_slider_2-min.jpg) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_2-min.jpg); 
 }
 
 #picture3 {
-	background: url(../images/landingspage_slider_3-min.JPG) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_3-min.JPG); 
 }
 
 #picture4 {
-	background: url(../images/landingspage_slider_4-min.jpg) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_4-min.jpg); 
 }
 
 #picture5 {
-	background: url(../images/landingspage_slider_5-min.jpeg) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_5-min.jpeg); 
 }
 
 #picture6 {
-	background: url(../images/landingspage_slider_6-min.JPG) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_6-min.JPG); 
 }
 
 #picture1,
@@ -87,9 +87,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  min-width: 100%;
-  min-height: 100%;
+  /*background-attachment: fixed;*/
 }
 
 #white-bg {
@@ -170,7 +168,7 @@ footer {
 }
 
 
-/**/
+/*
 
 #contact .cta-join-container {
 	text-align:center;
