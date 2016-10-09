@@ -345,13 +345,13 @@ blockquote::after{
 .calender-and-slider {
 	margin-top: 150px;
 }
-
+/*
 .calender-and-slider .col-md-4 {
 	padding-left: 0;
 }
 .calender-and-slider .col-md-8 {
 	padding-right: 0;
-}
+}*/
 
 .img-carousel {
     width: 100%;
