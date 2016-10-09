@@ -217,10 +217,10 @@ a:hover {
 
 .content-section-a {
 
-background: -moz-linear-gradient(45deg, hsla(0,7%,87%,0.6) 0%, hsla(0,0%,96%,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, hsla(0,7%,87%,0.6) 0%,hsla(0,0%,96%,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, hsla(0,7%,87%,0.6) 0%,hsla(0,0%,96%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99e0dbdb', endColorstr='#f4f4f4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: -moz-linear-gradient(45deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 box-shadow: 10px 10px 40px black, 10px -10px 40px black;
 
@@ -234,30 +234,32 @@ margin-bottom: 100px;
 .content-section-b {
 
 
-background: -moz-linear-gradient(-45deg, hsla(0,7%,87%,0.6) 0%, hsla(0,0%,96%,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, hsla(0,7%,87%,0.6) 0%,hsla(0,0%,96%,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, hsla(0,7%,87%,0.6) 0%,hsla(0,0%,96%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99e0dbdb', endColorstr='#f4f4f4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: -moz-linear-gradient(45deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 box-shadow: 10px 10px 40px black, 10px -10px 40px black;
 
 margin-top: 50px;
 margin-bottom: 50px;
 }
 
-/* nth-child selector for the odd-even rule, can't test this properly */
+/* nth-child selector for the odd-even rule, can't test this properly 
 .content-section-:nth-child(2n+2) {
-	background: -moz-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%, hsla(0,2%,49%,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d3d3', endColorstr='#7f7979',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%, hsla(0,2%,49%,1) 100%); 
+background: -webkit-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); 
+background: linear-gradient(135deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d3d3', endColorstr='#7f7979',GradientType=1 );
 }
+*/
 
 .content-section-c {
 
-background: -moz-linear-gradient(45deg, hsla(0,7%,87%,0.6) 0%, hsla(0,0%,96%,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, hsla(0,7%,87%,0.6) 0%,hsla(0,0%,96%,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, hsla(0,7%,87%,0.6) 0%,hsla(0,0%,96%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99e0dbdb', endColorstr='#f4f4f4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: -moz-linear-gradient(45deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 box-shadow: 10px 10px 40px black, 10px -10px 40px black;
 
@@ -273,8 +275,6 @@ blockquote {
 	font-size: 14px;
 	font-style: italic;
 	border: none;
-
-
 }
 
 blockquote::before{
@@ -284,6 +284,24 @@ blockquote::before{
 
 blockquote::after{
     content: "\201D"; /*Unicode for right Double Quote*/
+}
+
+.bracketA {
+	padding-right: 10px;
+}
+
+.bracketB {
+	padding-right: 10px;
+}
+
+.bracketC {
+	padding-right: 8px;
+}
+
+hr {
+	  border: 0;
+	  height: 2px;
+	  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .portrait-a {
