@@ -10,7 +10,9 @@ body {
 }
 
 #navbar-logo {
-	max-height: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .dropdown-toggle {
@@ -52,27 +54,27 @@ body {
 }
 
 #picture1 {
-	background: url(../images/landingpage_slider_1.jpeg) no-repeat center center fixed; 
+	background: url(../images/landingpage_slider_1-min.jpeg) no-repeat center center fixed; 
 }
 
 #picture2 {
-	background: url(../images/landingspage_slider_2.jpg) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_2-min.jpg) no-repeat center center fixed; 
 }
 
 #picture3 {
-	background: url(../images/landingspage_slider_3.JPG) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_3-min.JPG) no-repeat center center fixed; 
 }
 
 #picture4 {
-	background: url(../images/landingspage_slider_4.jpg) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_4-min.jpg) no-repeat center center fixed; 
 }
 
 #picture5 {
-	background: url(../images/landingspage_slider_5.jpeg) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_5-min.jpeg) no-repeat center center fixed; 
 }
 
 #picture6 {
-	background: url(../images/landingspage_slider_6.JPG) no-repeat center center fixed; 
+	background: url(../images/landingspage_slider_6-min.JPG) no-repeat center center fixed; 
 }
 
 #picture1,
