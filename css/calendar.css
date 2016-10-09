@@ -1,27 +1,36 @@
-h4 {
+/*TEMP*/
+#calendar .calendar-container {
+	margin-left:10px;
+}
+
+#calendar a {
+	color:inherit;
+	text-decoration: none;
+}
+/**/
+
+#calendar h4 {
 	margin:0px;
 	font-size:24px;
 }
 
-.event-sidebar {
-	float:left;
-	margin:0px;
-	padding-right: 15px;
-	font-size:20px;
+#calendar .event-container {
+	clear: both;
+	padding-top:10px;
 }
 
-.event-link {
+#calendar .event-sidebar {
 	float:left;
+	font-size:20px;
+	margin-right:15px;
+}
+
+#calendar .event-main {
+	float:left;
+}
+
+#calendar .event-link {
 	margin-bottom:20px;
 	font-size: 16px;
 	font-weight: normal;
 }
-
-.event-container {
-	clear: both;
-}
-
-.calendar-container {
-	margin-left:10px;
-}
-

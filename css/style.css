@@ -132,13 +132,6 @@ body {
 	align-items: right;
 }
 
-#contact .social-button {
-	vertical-align: text-bottom;
-	margin:1px 3px;
-	max-width: 4%;
-}
-
-
 footer {
 	margin-top: 100px;
 	box-shadow: 0px -10px 40px black;
@@ -152,10 +145,8 @@ footer {
 /*=CONTACT-PAGE*/
 #contact {
 	padding-top:50px;
-	font-size:18px;
-	font-size:1.5vw;
 }
-/*Probably on all <body> later?*/
+/*Probably on all <body> tags later?*/
 
 #contact a {
 	color:inherit;
@@ -166,16 +157,16 @@ footer {
 	color:inherit;
 }
 
-#contact .cta-join-container {
+.cta-join-container {
 	text-align:center;
-	margin:15px auto;
+	margin:0px auto;
 
 	/*CONTROLLER*/
 	max-width:32%;
 	/**/
 }
 
-#contact .cta-join-bg {
+.cta-join-bg {
 	background-image: url("./../images/meetup_icon_clean.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -183,7 +174,7 @@ footer {
 	padding:20% 5%;
 }
 
-#contact .cta-join-button{
+.cta-join-button{
 	/*BUTTON RESETS*/
 	border:none;
 	box-shadow: none;
@@ -199,10 +190,22 @@ footer {
 	/**/
 }
 
-#contact .cta-join-members {
+.cta-join-members {
 	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
 	font-size:7vw;
 	/**/
+}
+
+#top .cta-join-container {
+	max-width:20%;
+}
+
+#top .cta-join-button {
+	font-size:1.4vw;
+}
+
+#top .cta-join-members {
+	font-size:4.1vw;
 }
 
 /*#contact .cta-join-button:hover {
@@ -211,6 +214,8 @@ footer {
 
 #contact .social-container {
 	text-align:center;
+	font-size:18px;
+	font-size:1.4vw;
 }
 
 #contact .social-gc, #contact .social-team {
@@ -220,5 +225,13 @@ footer {
 
 #contact .social-element {
 	list-style: none;
+	max-width: 200px;
 	margin:10px;
+}
+
+#contact .social-button {
+	vertical-align: text-bottom;
+	margin:1px 3px;
+	max-width: 15%;
+	max-height: 40px;
 }
