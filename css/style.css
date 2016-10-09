@@ -126,16 +126,16 @@ body {
 	position: relative;
 }
 
-.social-button-footer, .social-button-contact {
+.social-button-footer, .social-button {
 	max-width: 20px;
 	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
 	align-items: right;
 }
 
-.social-button-contact {
+#contact .social-button {
 	vertical-align: text-bottom;
 	margin:1px 3px;
-	max-height: 17px;
+	max-width: 4%;
 }
 
 
@@ -149,14 +149,29 @@ footer {
 }
 
 
-/**/
+/*=CONTACT-PAGE*/
+#contact {
+	padding-top:50px;
+	font-size:18px;
+	font-size:1.5vw;
+}
+/*Probably on all <body> later?*/
+
+#contact a {
+	color:inherit;
+}
+
+#contact a:hover {
+	text-decoration: none;
+	color:inherit;
+}
 
 #contact .cta-join-container {
 	text-align:center;
-	margin:0px auto;
+	margin:15px auto;
 
 	/*CONTROLLER*/
-	max-width:50%;
+	max-width:32%;
 	/**/
 }
 
@@ -165,7 +180,7 @@ footer {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
-	padding:20% 10%;
+	padding:20% 5%;
 }
 
 #contact .cta-join-button{
@@ -180,7 +195,13 @@ footer {
 	color:white;
 	
 	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
-	font-size:3.5vw;
+	font-size:2.7vw;
+	/**/
+}
+
+#contact .cta-join-members {
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
+	font-size:7vw;
 	/**/
 }
 
@@ -188,34 +209,16 @@ footer {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	/*color:rgb(230,230,230);*/
 
-/*Alleen op de tekst.??*/
-
-.contact-social-links-container {
+#contact .social-container {
 	text-align:center;
 }
 
-.contact-social-links-container ul {
+#contact .social-gc, #contact .social-team {
 	display:inline-block;
 	vertical-align: text-top;
 }
 
-.contact-gc-social-links li, .contact-team-social-links li {
+#contact .social-element {
 	list-style: none;
 	margin:10px;
-}
-
-.contact-team-social-links {
-}
-
-a {
-	color:inherit;
-}
-
-#contact a:hover {
-	text-decoration: none;
-	color:inherit;
-}
-
-.fa {
-	margin-right:5px;
 }
