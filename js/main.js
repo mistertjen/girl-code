@@ -84,47 +84,52 @@ if (document.getElementsByClassName('contact-meetup-members')[0]) {
 
 // IF no upcoming events yet, keep checking. New ones every month.
 if (document.getElementsByClassName('calendar-container')[0]) {
-	for (var x = 0, dateString = '', 
-		eventLinks = document.getElementsByClassName('event-link'),
-		eventNames = document.getElementsByClassName('event-name'),
-		eventDays = document.getElementsByClassName('event-day'),
-		eventTimes = document.getElementsByClassName('event-time'),
-		eventVenueNames = document.getElementsByClassName('event-venue-name'),
-		eventGoings = document.getElementsByClassName('event-going'),
-		eventDates = document.getElementsByClassName('event-date'),
-		eventMonths = document.getElementsByClassName('event-month');
-		x < requestsJSON[1].length; x++) {
-		
-		dateString = String(new Date(requestsJSON[1][x]['time']));
-		eventNames[x].innerHTML = requestsJSON[1][x]['name'];
-		eventLinks[x].href = requestsJSON[1][x]['link'];
-		eventDays[x].innerHTML = dateString.slice(0,3);
-		eventTimes[x].innerHTML = dateString.slice(16,21);
-		eventVenueNames[x].innerHTML = requestsJSON[1][x]['venue']['name']
-		eventGoings[x].innerHTML = requestsJSON[1][x]['yes_rsvp_count'] + ' going';
-		eventDates[x].innerHTML = dateString.slice(8,10);
-		eventMonths[x].innerHTML = dateString.slice(4,7);
+	if(requestsJSON[1][0]) {
+		document.getElementsByClassName('event-coming-soon')[0].style = "display:none";
+		for (var x = 0, dateString = '', 
+			eventLinks = document.getElementsByClassName('event-link'),
+			eventNames = document.getElementsByClassName('event-name'),
+			eventDays = document.getElementsByClassName('event-day'),
+			eventTimes = document.getElementsByClassName('event-time'),
+			eventVenueNames = document.getElementsByClassName('event-venue-name'),
+			// eventGoings = document.getElementsByClassName('event-going'),
+			eventDates = document.getElementsByClassName('event-date'),
+			eventMonths = document.getElementsByClassName('event-month');
+			x < requestsJSON[1].length; x++) {
+			
+			dateString = String(new Date(requestsJSON[1][x]['time']));
+			eventNames[x].innerHTML = requestsJSON[1][x]['name'];
+			eventLinks[x].href = requestsJSON[1][x]['link'];
+			eventDays[x].innerHTML = dateString.slice(0,3);
+			eventTimes[x].innerHTML = dateString.slice(16,21);
+			eventVenueNames[x].innerHTML = requestsJSON[1][x]['venue']['name']
+			// eventGoings[x].innerHTML = requestsJSON[1][x]['yes_rsvp_count'] + ' going';
+			eventDates[x].innerHTML = dateString.slice(8,10);
+			eventMonths[x].innerHTML = dateString.slice(4,7);
+		}
 	}
 
-	for (var x = 5, y = requestsJSON[2].length - 1, dateString = '', 
-		eventLinks = document.getElementsByClassName('event-link'),
-		eventNames = document.getElementsByClassName('event-name'),
-		eventDays = document.getElementsByClassName('event-day'),
-		eventTimes = document.getElementsByClassName('event-time'),
-		eventVenueNames = document.getElementsByClassName('event-venue-name'),
-		eventGoings = document.getElementsByClassName('event-going'),
-		eventDates = document.getElementsByClassName('event-date'),
-		eventMonths = document.getElementsByClassName('event-month');
-		y >= 0; x++, y--) {
-	
-		dateString = String(new Date(requestsJSON[2][y]['time']));
-		eventNames[x].innerHTML = requestsJSON[2][y]['name'];
-		eventLinks[x].href = requestsJSON[2][y]['link'];
-		eventDays[x].innerHTML = dateString.slice(0,3);
-		eventTimes[x].innerHTML = dateString.slice(16,21);
-		eventVenueNames[x].innerHTML = requestsJSON[2][y]['venue']['name']
-		eventGoings[x].innerHTML = requestsJSON[2][y]['yes_rsvp_count'] + ' going';
-		eventDates[x].innerHTML = dateString.slice(8,10);
-		eventMonths[x].innerHTML = dateString.slice(4,7);
-	}		
+	if(requestsJSON[2][0]) {
+		for (var x = 5, y = requestsJSON[2].length - 1, dateString = '', 
+			eventLinks = document.getElementsByClassName('event-link'),
+			eventNames = document.getElementsByClassName('event-name'),
+			// eventDays = document.getElementsByClassName('event-day'),
+			eventTimes = document.getElementsByClassName('event-time'),
+			eventVenueNames = document.getElementsByClassName('event-venue-name'),
+			// eventGoings = document.getElementsByClassName('event-going'),
+			eventDates = document.getElementsByClassName('event-date'),
+			eventMonths = document.getElementsByClassName('event-month');
+			y >= 0; x++, y--) {
+		
+			dateString = String(new Date(requestsJSON[2][y]['time']));
+			eventNames[x].innerHTML = requestsJSON[2][y]['name'];
+			eventLinks[x].href = requestsJSON[2][y]['link'];
+			// eventDays[x].innerHTML = dateString.slice(0,3);
+			eventTimes[x].innerHTML = dateString.slice(16,21);
+			eventVenueNames[x].innerHTML = requestsJSON[2][y]['venue']['name']
+			// eventGoings[x].innerHTML = requestsJSON[2][y]['yes_rsvp_count'] + ' going';
+			eventDates[x].innerHTML = dateString.slice(8,10);
+			eventMonths[x].innerHTML = dateString.slice(4,7);
+		}	
+	}	
 };
