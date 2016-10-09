@@ -54,29 +54,6 @@ body {
 }
 
 #picture1 {
-<<<<<<< 2a91c522572b9a5193be5bd0b120eba12e8692f2
-	background: url(../images/landingpage_slider_1-min.jpeg) no-repeat center center fixed; 
-}
-
-#picture2 {
-	background: url(../images/landingspage_slider_2-min.jpg) no-repeat center center fixed; 
-}
-
-#picture3 {
-	background: url(../images/landingspage_slider_3-min.JPG) no-repeat center center fixed; 
-}
-
-#picture4 {
-	background: url(../images/landingspage_slider_4-min.jpg) no-repeat center center fixed; 
-}
-
-#picture5 {
-	background: url(../images/landingspage_slider_5-min.jpeg) no-repeat center center fixed; 
-}
-
-#picture6 {
-	background: url(../images/landingspage_slider_6-min.JPG) no-repeat center center fixed; 
-=======
 	background: url(../images/landingpage_slider_1.jpeg) no-repeat center center fixed; 
 }
 
@@ -97,8 +74,7 @@ body {
 }
 
 #picture6 {
-	background: url(../images/landingspage_slider_6.JPG) no-repeat center center fixed; 
->>>>>>> solving merge conflict
+	background: url(../images/landingspage_slider_6.JPG) no-repeat center center fixed;
 }
 
 #picture1,
@@ -171,16 +147,16 @@ body {
 	position: relative;
 }
 
-.social-button-footer, .social-button-contact {
+.social-button-footer, .social-button {
 	max-width: 20px;
 	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
 	align-items: right;
 }
 
-.social-button-contact {
+#contact .social-button {
 	vertical-align: text-bottom;
 	margin:1px 3px;
-	max-height: 17px;
+	max-width: 4%;
 }
 
 
@@ -193,14 +169,29 @@ footer {
 	position: relative;
 }
 
-/**/
+/*=CONTACT-PAGE*/
+#contact {
+	padding-top:50px;
+	font-size:18px;
+	font-size:1.5vw;
+}
+/*Probably on all <body> later?*/
+
+#contact a {
+	color:inherit;
+}
+
+#contact a:hover {
+	text-decoration: none;
+	color:inherit;
+}
 
 #contact .cta-join-container {
 	text-align:center;
-	margin:0px auto;
+	margin:15px auto;
 
 	/*CONTROLLER*/
-	max-width:50%;
+	max-width:32%;
 	/**/
 }
 
@@ -209,7 +200,7 @@ footer {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
-	padding:20% 10%;
+	padding:20% 5%;
 }
 
 #contact .cta-join-button{
@@ -222,28 +213,15 @@ footer {
 	margin:0px;
 	padding:10% 20%;
 	color:white;
-
-	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
-	font-size:3.5vw;
-	/**/
-}
-
-/*#contact .cta-join-button:hover {
-	background-image: url("./../images/meetup_icon_clean_light.png");
-	/*color:rgb(230,230,230);*/
-
-/*Alleen op de tekst.??*/
-
-	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
-	font-size:3.5vw;
+	
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
+	font-size:2.7vw;
 	/**/
 }
 
 #contact .cta-join-members {
-	margin:5px;
-
-	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/
-	font-size:9vw;
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
+	font-size:7vw;
 	/**/
 }
 
@@ -251,20 +229,16 @@ footer {
 	background-image: url("./../images/meetup_icon_clean_light.png");
 	/*color:rgb(230,230,230);*/
 
-
-
-/*Alleen op de tekst.??*/
-
-.contact-social-links-container {
+#contact .social-container {
 	text-align:center;
 }
 
-.contact-social-links-container ul {
+#contact .social-gc, #contact .social-team {
 	display:inline-block;
 	vertical-align: text-top;
 }
 
-.contact-gc-social-links li, .contact-team-social-links li {
+#contact .social-element {
 	list-style: none;
 	margin:10px;
 }
