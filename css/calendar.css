@@ -9,9 +9,23 @@
 }
 /**/
 
+#calendar .event-name {
+	margin-bottom:3px;
+}
+
+#calendar h2 {
+	margin:0px;
+	font-size:26px;
+}
+
 #calendar h4 {
 	margin:0px;
-	font-size:24px;
+	font-size:14px;
+}
+
+#calendar .event-coming-soon {
+	margin-top:10px;
+	margin-bottom:0px;
 }
 
 #calendar .event-container {
@@ -21,16 +35,17 @@
 
 #calendar .event-sidebar {
 	float:left;
-	font-size:20px;
 	margin-right:15px;
+	font-size:14px;
 }
 
 #calendar .event-main {
 	float:left;
+	max-width:75%;
 }
 
 #calendar .event-link {
 	margin-bottom:20px;
-	font-size: 16px;
 	font-weight: normal;
+	font-size: 11px;
 }
