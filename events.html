@@ -6,7 +6,7 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <!-- Bootstrap custom slider css -->
-    <!-- <link rel="stylesheet" type="text/css" href="./css/full-slider.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/full-slider.css">
     <!-- Template css -->
     <link rel="stylesheet" type="text/css" href="./css/templateStyle.css">
     <!-- Our own css -->
@@ -64,7 +64,62 @@
     <!-- /.container -->
     </nav>
 
-    <!-- Content section -->
+    <!-- calender of meetup events and slider with three featured events-->
+    <div class="container calender-and-slider">
+        <div class="row">
+            <div class="container">
+
+                <div class="col-md-4">
+                    <!-- insert calender here -->
+                    <div class="placeholder-calender">
+                        <p> Calender here</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="img-carousel" id="carousel_img_01"></div>
+                          <!-- <img class="img-carousel" src="./images/event_2016_04.jpeg"> -->
+                          <div class="carousel-caption">
+                            <h3>We participate in initiatives to inspire young girls in tech</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-carousel" id="carousel_img_02"></div>
+                      <!-- <img class="img-carousel" src="./images/event_2015_06.jpeg"> -->
+                      <div class="carousel-caption">
+                        <h3>We organize talks and demos</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-carousel" id="carousel_img_03"></div>
+                  <!-- <img class="img-carousel" src="./images/event_2016_09.JPG"> -->
+                  <div class="carousel-caption">
+                    <h3>We give workshops</h3>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <!-- Events with pic and small description on date -->
 
     <!-- first section teamProfile -->
     <div class="content-section-c">
