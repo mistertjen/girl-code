@@ -447,3 +447,46 @@ hr {
 	box-shadow: 7px 7px 8px;
 	margin-top: 25px;
 }
+
+/*--------events page--------*/
+.calender-and-slider {
+	margin-top: 150px;
+}
+
+.calender-and-slider .col-md-4 {
+	padding-left: 0;
+}
+.calender-and-slider .col-md-8 {
+	padding-right: 0;
+}
+
+.img-carousel {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+#carousel_img_01 {
+	background-image: url(../images/event_2016_04.jpeg);
+}
+
+#carousel_img_02 {
+	background-image: url(../images/event_2015_06.jpeg);
+}
+
+#carousel_img_03 {
+	background-image: url(../images/event_2016_09.JPG);
+}
+
+/*place-holder styling for calender, so you see that there's a place for the calender, you can fix styling for the real calender */
+.placeholder-calender {
+	width: 100%;
+    height: 400px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+
+
+
