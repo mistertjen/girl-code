@@ -41,30 +41,33 @@
                         <a class="scroll" href="#about">About</a>
                     </li>
                     <li>
-                       <!-- dropdown for team -->
-                       <div class="dropdown">
-                          <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <a href="team.html">Team</a>
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="team.html#ineke">Ineke</a></li>
-                            <li><a href="team.html#katja">Katja</a></li>
-                            <li><a href="team.html#kristin">Kristin</a></li>
-                        </ul>
-                    </div>
-                    </li>
-                    <li>
-                        <a href="events.html">Events</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        <!-- /.navbar-collapse -->
+                     <!-- dropdown for team -->
+                     <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <a href="team.html">Team</a>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="team.html#ineke">Ineke</a></li>
+                        <li><a href="team.html#katja">Katja</a></li>
+                        <li><a href="team.html#kristin">Kristin</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="events.html">Events</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
     </div>
-    <!-- /.container -->
+    <!-- /.navbar-collapse -->
+
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
 </nav>
 
 <!-- container for background image, white image for filter effect and header logo and icons-->
@@ -89,10 +92,17 @@
                     <div class="intro-message">
                         <img id="header-logo" src="./images/logo.png">
                         <hr class="intro-divider">
-                                <!-- meetup -->
-                                <a href="https://www.meetup.com/girlcode/"> 
-                                    <img class="social-button" src="./images/button_meetup.png">
+                        <div class="cta-join-container">
+                            <div class="cta-join-bg">
+                                <a href="https://www.meetup.com/girlcode">
+                                    <button class='cta-join-button'>
+                                        Join our <br>
+                                        <span class='cta-join-members'>367</span> <br> 
+                                        girl coders
+                                    </button>
                                 </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,7 +140,7 @@
     </div>
     <!-- /.about -->
 
-     <!-- FOR AFTER Node-lecture: loading in footer.html via jQuery so we don't have to copy-paste the code in all pages --> 
+    <!-- FOR AFTER Node-lecture: loading in footer.html via jQuery so we don't have to copy-paste the code in all pages --> 
     <!-- <div id="footer-"></div> -->
 
     <!-- Footer --> 
