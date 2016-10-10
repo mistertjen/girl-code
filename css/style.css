@@ -113,6 +113,10 @@ body {
 	margin-top: 20px;
 }
 
+.nomar {
+	margin:0px;
+}
+
 #cover-logo {
 	width: 100%;
 	height: inherit;
