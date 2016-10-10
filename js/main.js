@@ -8,10 +8,21 @@ $(document).ready(function() {
 });
 
 // slow scroll to content
+$(document).ready(function() {
+	var fullUrl= $(location).attr('href');
+	var hashPresent = fullUrl.match('\\?(.*)');	
+	if (hashPresent[0][0] === "?" ) {
+		$('html, body').animate({
+			scrollTop: $('#' + hashPresent[1]).offset().top -150
+		}, 1250);
+		return false;
+	}	
+})
+
 $('.scroll').click(function(event){
 	event.preventDefault();
 	$('html, body').animate({
-		scrollTop: $( $.attr(this, 'href') ).offset().top -150
+		scrollTop: $( $.attr(this,'href') ).offset().top -150
 	}, 1250);
 	return false;
 });
