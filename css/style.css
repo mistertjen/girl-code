@@ -186,7 +186,7 @@ footer {
 	margin:0px auto;
 
 	/*CONTROLLER*/
-	max-width:32%;
+	max-width:400px;
 	/**/
 }
 
@@ -211,26 +211,26 @@ footer {
 	color:white;
 	
 	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
-	font-size:2.7vw;
+	font-size:35px;
 	/**/
 }
 
 .cta-join-members {
 	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
-	font-size:7vw;
+	font-size:80px;
 	/**/
 }
 
 #top .cta-join-container {
-	max-width:10%;
+	max-width:110px;
 }
 
 #top .cta-join-button {
-	font-size:0.7vw;
+	font-size:10px;
 }
 
 #top .cta-join-members {
-	font-size:2vw;
+	font-size:26px;
 }
 
 /*#contact .cta-join-button:hover {
@@ -240,7 +240,6 @@ footer {
 #contact .social-container {
 	text-align:center;
 	font-size:18px;
-	font-size:1.4vw;
 }
 
 #contact .social-gc, #contact .social-team {
@@ -257,7 +256,7 @@ footer {
 #contact .social-button {
 	vertical-align: text-bottom;
 	margin:1px 3px;
-	max-width: 15%;
+	max-width: 20px;
 	max-height: 40px;
 }
 
